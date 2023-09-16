@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Sermon</title>
+    </head>
+    <body>
+        <nav class="navbar-one flex">
+       
+            
+            <div class="logo"><img src="/image/Trans.png">
+       
+                <h2 class="Name">Global<span> Evangelical </span> </h2>
+                <h4 class="Name1">Salvation<span> Chapel</span> </h4>
+
+           
+           </div>
+           <div class="left flex">
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+               
+
+            </div>
+        </div>
+        <div class="right flex">
+            <a href="#"><i class="fas fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+        </div>
+ 
+        
+    </div>
+        </div>
+    </nav>
+    <div class="menu-bar">
+
+      
+
+
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"></i>Sermon</a>
+                  <div class="sub-menu">
+                <ul>
+                    <li><a href="audio.html"></i>Audio Sermon</a></li>
+                    <li><a href="Video.html"></i>Video Sermon</a></li>
+                    </ul>
+                </li>
+           
+            
+            <li><a href="#"></i>Ministries<i class="fa fa-angle-down"></i></a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#"></i>Christian Youth Builders</a></li>
+                        <li><a href="#"></i>Youth Ministry </a></li>
+                        <li><a href="#"></i>Women Bible class</a></li>
+                        <li><a href="men ministries.html"></i>Men Ministry</a></li>
+                        <li><a href="women ministry.html"></i>Church choir</a></li>
+                        <li><a href="child ministry.html"></i>Children Ministry</a></li>
+                        <li><a href="#"></i>Prayer Ministry</a></li>
+                        <li><a href="#"></i>Great Choir</a></li>
+                        <li><a href="#"></i>Salvation Praise </a></li>
+
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a href="event.html"></i>Event</a></li>
+            <li><a href="#"></i>Online Giving</a></li>
+
+
+
+            <li><a href="#"></i>Hymn</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#"></i>Ewe Hymn</a></li>
+                        <li><a href="#"></i>English Hymn</a></li>
+
+
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"></i>About</a></li>
+
+        </ul>
+       
+    </div>
+    <div class="sermon-video">
+       
+  
+        <h3 class="sermon-heading">SERMON GALLAY</h3>
+        
+        <div class="button-add">
+            <button class="btn-add-sermon"><a href="#">Add Video Sermon</a> </button>
+        </div>
+        <div class="sermon-container">
+            <div class="main-video">
+                <div class="video">
+                    <video src="image/Moana.2017.mp4" controls muted autoplay></video>
+                    <h3 class="title-video">01. Video title goes here</h3>
+                </div>
+            </div>
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="image/f1.mp4"  muted></video>
+                    <h3 class="title-video">01. Video title goes here</h3>
+                </div>
+                <div class="vid">
+                    <button class="btn-edit">Edit</button>
+                    <video src="image/fb2.mp4"  muted></video>
+                    <h3 class="title-video">01. Video title goes here</h3>
+                
+                </div> <div class="vid">
+                    <video src="image/f1.mp4"  muted></video>
+                    <h3 class="title-video">01. Video title goes here</h3>
+                </div>
+                <div class="vid">
+                    <video src="image/fb3.mp4"  muted></video>
+                    <h3 class="title-video">08. Video title goes here</h3>
+                </div>
+                <div class="vid">
+                    <video src="image/fb4.mp4"  muted></video>
+                    <h3 class="title-video">01. Video title goes here</h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let listVideo = document.querySelectorAll('.video-list .vid');
+            let mainVideo = document.querySelector('.main-video video');
+            let titlevideo = document.querySelector('.main-video .title-video');
+
+            listVideo.forEach(video =>{
+                video.onclick = () =>{
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+                    video.classList.add('active');
+                    if(video.classList.contains('active')){
+                        let src = video.children[0].getAttribute('src');
+                        mainVideo.src=src;
+                        let text = video.children[1].innerHTML;
+                        titlevideo.innerHTML = text;
+
+                    };
+
+                };
+            });
+        </script>
+
+       </div>
+    
+    
+</body>
+</html>

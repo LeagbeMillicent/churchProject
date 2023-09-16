@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar-one flex">
+       
+            
+        <div class="logo"><img src="/image/Global.png">
+   
+            <h2 class="Name">Global<span> Evangelical </span> </h2>
+            <h4 class="Name1">Salvation<span> Chapel</span> </h4>
+
+       
+       </div>
+       <div class="left flex">
+        <div class="email">
+            <i class="fa fa-envelope"></i>
+           
+
+        </div>
+    </div>
+    <div class="right flex">
+        <a href="#"><i class="fas fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+    </div>
+
+    
+</div>
+    </div>
+</nav>
+<div class="menu-bar">
+
+  
+
+
+    <ul>
+        <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#"></i>Sermon</a>
+              <div class="sub-menu">
+            <ul>
+                <li><a href="audio.html"></i>Audio Sermon</a></li>
+                <li><a href="Video.html"></i>Video Sermon</a></li>
+                </ul>
+            </li>
+       
+        
+        <li><a href="#"></i>Ministries<i class="fa fa-angle-down"></i></a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="#"></i>Christian Youth Builders</a></li>
+                    <li><a href="#"></i>Youth Ministry </a></li>
+                    <li><a href="#"></i>Women Bible class</a></li>
+                    <li><a href="men ministries.html"></i>Men Ministry</a></li>
+                    <li><a href="women ministry.html"></i>Church choir</a></li>
+                    <li><a href="child ministry.html"></i>Children Ministry</a></li>
+                    <li><a href="#"></i>Prayer Ministry</a></li>
+                    <li><a href="#"></i>Great Choir</a></li>
+                    <li><a href="#"></i>Salvation Praise </a></li>
+
+
+
+                </ul>
+            </div>
+        </li>
+
+
+        <li><a href="event.html"></i>Event</a></li>
+        <li><a href="#"></i>Online Giving</a></li>
+
+
+
+        <li><a href="#"></i>Hymn</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="#"></i>Ewe Hymn</a></li>
+                    <li><a href="#"></i>English Hymn</a></li>
+
+
+
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"></i>About</a></li>
+
+    </ul>
+   
+</div>
+    <div class="container-audio">
+        <div class="heading-audio">AUDIO SERMON</div>
+        <div class="search-container">
+        <div class="search-input-box">
+            <input type="text" placeholder="Search...">
+            <span class="search-icon">
+                <i class="fas fa-search search-icons"></i>
+
+            </span>
+            <i class="fas fa-times close-icons"></i>
+
+
+        </div>
+    </div>
+
+        <div class="audio-container">
+            <div class="button-add">
+                <button class="btn-add"><a href="#">Add Audio Sermon</a> </button>
+            </div>
+            <div class="box1">
+                <div class="image1">
+                    <img src="/image/au1.jpg" alt="">
+                </div>
+                <div class="audio">
+                   
+                    
+                    <button class="btn-edit">Edit</button>
+                    <audio src="/image/aud1.mp3" controls></audio>
+                    <h3 class="title-audio">01. Audio title goes here</h3>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="image1">
+                    <img src="/image/au2.jpg" alt="">
+                </div>
+                <div class="audio">
+                    <button class="btn-edit">Edit</button>
+                    <audio src="/image/aud2.mp3" controls></audio>
+                    <h3 class="title-audio">02. Audio title goes here</h3>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="image1">
+                    <img src="/image/au3.jpg" alt="">
+                </div>
+                <div class="audio">
+                    <button class="btn-edit">Edit</button>
+                    <audio src="/image/aud3.mp3" controls></audio>
+                    <h3 class="title-audio">03. Audio title goes here</h3>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="image1">
+                    <img src="/image/au4.jpg" alt="">
+                </div>
+                <div class="audio">
+                    <button class="btn-edit">Edit</button>
+                    <audio src="/image/aud4.mp3" controls></audio>
+                    <h3 class="title-audio">04. Audio title goes here</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let inputBox = document.querySelector(".search-input-box"),
+        search = document.querySelector(".search-icon"),
+        closeIcons = document.querySelector(".close-icons");
+
+       
+       
+        search.addEventListener("click", () =>inputBox.classList.add("open"));
+        closeIcons.addEventListener("click", () =>inputBox.classList.remove("open"));
+   </script>
+    
+</body>
+</html>
